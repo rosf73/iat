@@ -1,0 +1,24 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Theme.IAT" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/background</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="colorSecondaryVariant">@color/secondary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Background color. -->
+        <item name="android:colorBackground">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+
+        <item name="android:textViewStyle">@style/tvFontStyle</item>
+        <item name="android:buttonStyle">@style/btnFontStyle</item>
+        <item name="android:editTextStyle">@style/etFontStyle</item>
+        <item name="android:radioButtonStyle">@style/rbFontStyle</item>
+        <item name="android:checkboxStyle">@style/cbFontStyle</item>
+    </style>
+</resources>

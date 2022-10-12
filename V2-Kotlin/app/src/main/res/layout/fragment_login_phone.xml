@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="45dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/desc_logo"/>
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight ="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#222"
+            android:textSize="22sp"
+            android:text="@string/login_phone_1"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#777"
+            android:textSize="15sp"
+            android:text="@string/login_phone_2"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#77C"
+            android:textSize="15sp"
+            android:text="@string/login_phone_3"
+            android:gravity="center"
+            android:layout_marginBottom="50dp"/>
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="#555"
+            android:backgroundTint="#3A3C5F"
+            android:textCursorDrawable="@color/scroll_thumb"
+            android:inputType="phone"
+            android:hint="@string/login_phone_hint"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginBottom="10dp"
+            android:singleLine="true"
+            android:lines="1"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/primary"
+        android:textColor="#FFF"
+        android:textSize="28sp"
+        android:text="@string/login_button"
+        android:paddingVertical="15dp"
+        android:layout_margin="20dp"/>
+
+    <ProgressBar
+        android:id="@+id/pb_phone"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

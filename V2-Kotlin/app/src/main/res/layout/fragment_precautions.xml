@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:text="@string/survey_1"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:background="@color/secondary"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FAFAFA">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="19sp"
+            android:text="@string/survey_2"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F22"
+            android:textSize="18sp"
+            android:text="@string/survey_3"
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            android:text="@string/survey_button"
+            android:backgroundTint="@color/primary"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="15dp"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb_test"
+        style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:progress="0"
+        android:paddingHorizontal="15dp"/>
+
+</LinearLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTitle">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#DDF"
+        android:textSize="13dp"
+        android:text="v2.15"
+        android:gravity="right"
+        android:layout_margin="3dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight ="1">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logoicon"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/hello1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DDF"
+            android:textSize="30dp"
+            android:text="어서오세요!"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/hello2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DDF"
+            android:textSize="22dp"
+            android:text="암묵적 연합검사(IAT) 연구에\n참여해주셔서 감사드립니다!"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:id="@+id/gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#DDF"
+            android:textSize="15dp"
+            android:text="참여가 끝나면\n스타벅스(아메리카노) 기프티콘이 제공됩니다"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/agreement_button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@drawable/main_button"
+        android:textColor="#FFF"
+        android:textSize="28dp"
+        android:text="약관 읽기"
+        android:layout_margin="30dp"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</LinearLayout>

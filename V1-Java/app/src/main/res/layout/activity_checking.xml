@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckingActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#3A3C5F"
+        android:textSize="22dp"
+        android:text="설문 시작 전\n한 가지만 대답해주세요!"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#222"
+        android:textSize="24dp"
+        android:text="요즘 당신이 중요하게 생각하여 진행 중이신 공부가 있습니까?"
+        android:gravity="center"
+        android:layout_marginBottom="5dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#777"
+        android:textSize="15dp"
+        android:text="현재 진지하게 임하는 공부가 없으면 설문에 참여하시기가 어렵습니다. 솔직하게 답변해주시기 바랍니다."
+        android:gravity="center"
+        android:layout_marginBottom="50dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="70dp">
+
+        <Button
+            android:id="@+id/yes_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/agreement_button"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:text="있다"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="30dp"/>
+        <Button
+            android:id="@+id/no_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/agreement_button"
+            android:textColor="#FFF"
+            android:textSize="20dp"
+            android:text="없다"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="30dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/root_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:textColor="#FFF"
+        android:textSize="22dp"
+        android:text="설문 전 주의사항"
+        android:gravity="center"
+        android:background="@color/colorTitle"/>
+
+    <ProgressBar
+        android:id="@+id/modal_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/notice_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#FAFAFA">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:textSize="19dp"
+            android:text="설문은 약 20분 정도 소요되며 가로 화면으로 진행됩니다.\n
+모든 문항에 빠짐없이 답변해 주셔야 보상이 지급되오니"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#F22"
+            android:textSize="18dp"
+            android:text="매 단계마다 제시해 드리는 주의사항과 안내문을\n
+꼼꼼하게 읽어주시길 바랍니다."
+            android:gravity="center"
+            android:layout_marginBottom="15dp"/>
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:textColor="#FFF"
+            android:text="설문 시작하기"
+            android:background="@drawable/main_button"
+            android:paddingHorizontal="35dp"
+            android:paddingVertical="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/survey_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/number_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#3661A1"
+                android:textSize="40dp"
+                android:text="1."
+                android:paddingHorizontal="20dp"
+                android:paddingTop="5dp"/>
+            <TextView
+                android:id="@+id/question_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:textColor="#333"
+                android:textSize="24dp"
+                android:text="요즘 당신이 중요하게 생각하여 진행 중이신 공부가 있습니까 있습니까 있습니까?"
+                android:paddingTop="18dp"
+                android:layout_marginRight="20dp"/>
+
+        </LinearLayout>
+
+        <com.kumoh.iat.CustomTableView
+            android:id="@+id/table_title_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:paddingHorizontal="20dp">
+
+            <com.kumoh.iat.CustomTableRow
+                android:id="@+id/first_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="#E6F4FA"
+                android:weightSum="11">
+
+                <TextView
+                    android:id="@+id/first_cell"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#000"
+                    android:textSize="17dp"
+                    android:text="문항"
+                    android:padding="5dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="6"/>
+
+            </com.kumoh.iat.CustomTableRow>
+            <View
+                android:id="@+id/row_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#001C58"/>
+
+        </com.kumoh.iat.CustomTableView>
+
+        <ScrollView
+            android:id="@+id/survey_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:fadeScrollbars="false"
+            android:scrollbarThumbVertical="@color/colorThumb"
+            android:scrollbarTrackVertical="@color/colorTrack"
+            android:paddingHorizontal="20dp"
+            android:fadingEdge="vertical"
+            android:fadingEdgeLength="68px"
+            android:requiresFadingEdge="vertical"
+            android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <com.kumoh.iat.CustomLinearLayout
+                android:id="@+id/base_case_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="50dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+            </com.kumoh.iat.CustomLinearLayout>
+
+            <com.kumoh.iat.CustomTableView
+                android:id="@+id/table_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:visibility="gone">
+
+            </com.kumoh.iat.CustomTableView>
+
+            <com.kumoh.iat.CustomLinearLayout
+                android:id="@+id/sub_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="50dp"
+                android:layout_marginBottom="15dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center">
+
+                </LinearLayout>
+
+            </com.kumoh.iat.CustomLinearLayout>
+
+        </LinearLayout>
+
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/single_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/iat_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/agreement_button"
+                android:textSize="20dp"
+                android:textColor="#FFF"
+                android:text="시작하기"
+                android:paddingHorizontal="35dp"
+                android:paddingVertical="15dp"/>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/assay_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="5"
+            android:minLines="1"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/survey_progress"
+            style="@android:style/Widget.DeviceDefault.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:progress="0"
+            android:layout_weight="1"
+            android:paddingHorizontal="15dp"/>
+
+        <Button
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/prev_button"
+            android:textColor="#FFF"
+            android:text="이전문항"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/next_button"
+            android:textColor="#FFF"
+            android:text="다음문항"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+
+</LinearLayout>

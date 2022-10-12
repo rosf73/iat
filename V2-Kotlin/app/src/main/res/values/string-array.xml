@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grade_array">
+        <item>중학교</item>
+        <item>고등학교</item>
+        <item>대학교</item>
+        <item>기타</item>
+    </string-array>
+    <string-array name="middle_array">
+        <item>1학년</item>
+        <item>2학년</item>
+        <item>3학년</item>
+    </string-array>
+    <string-array name="high_array">
+        <item>1학년</item>
+        <item>2학년</item>
+        <item>3학년</item>
+    </string-array>
+    <string-array name="univ_array">
+        <item>1학년</item>
+        <item>2학년</item>
+        <item>3학년</item>
+        <item>4학년</item>
+        <item>5학년 이상</item>
+        <item>졸업 후 취직준비</item>
+    </string-array>
+    <string-array name="major_array">
+        <item>문과계열</item>
+        <item>이과계열</item>
+        <item>예체능계열</item>
+    </string-array>
+</resources>
