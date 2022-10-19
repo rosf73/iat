@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFF"
+        android:textSize="22sp"
+        android:text="@string/iat"
+        android:gravity="center"
+        android:paddingVertical="15dp"
+        android:background="@color/secondary"/>
+
+    <ScrollView
+        android:id="@+id/sv_iat_precautions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight ="1"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@color/scroll_thumb"
+        android:scrollbarTrackVertical="@color/scroll_track">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:paddingBottom="30dp">
+
+            <TextView
+                android:id="@+id/tv_precautions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#222"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:text="@string/iat_precautions"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="10dp"/>
+            <kumoh.iat.v2.ui.customview.CustomTableView
+                android:id="@+id/ctv_words"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:shrinkColumns="*"
+                android:paddingBottom="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:weightSum="6"
+                    android:layout_marginVertical="5dp">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:text="@string/iat_table_title_1"
+                        android:textAlignment="center"
+                        android:background="#AAA"
+                        android:layout_weight="1"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:text="@string/iat_table_title_2"
+                        android:textAlignment="center"
+                        android:background="#BBB"
+                        android:layout_weight ="5"/>
+                </TableRow>
+
+            </kumoh.iat.v2.ui.customview.CustomTableView>
+
+            <Button
+                android:id="@+id/btn_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="#FFF"
+                android:text="@string/iat_start_button"
+                android:backgroundTint="@color/primary"
+                android:paddingHorizontal="35dp"
+                android:paddingVertical="15dp"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

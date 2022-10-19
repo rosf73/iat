@@ -12,9 +12,9 @@ sealed class QuestionData {
         @SerializedName("is_assay") val isAssay: List<Int>
     ): QuestionData() {
         fun toNormalDto(): QuestionDto.QuestionNormalDto
-                = QuestionDto.QuestionNormalDto(
-            number, question, cases, isAssay
-        )
+            = QuestionDto.QuestionNormalDto(
+                number, question, cases, isAssay
+            )
     }
 
     data class QuestionTableData(
@@ -25,9 +25,9 @@ sealed class QuestionData {
         @SerializedName("cases") val cases: List<String>
     ): QuestionData() {
         fun toTableDto(): QuestionDto.QuestionTableDto
-                = QuestionDto.QuestionTableDto(
-            number, question, subContents, cases
-        )
+            = QuestionDto.QuestionTableDto(
+                number, question, subContents, cases
+            )
     }
 
     data class QuestionListedData(
@@ -38,9 +38,9 @@ sealed class QuestionData {
         @SerializedName("sub_contents") val subContents: List<QuestionListedContent>
     ): QuestionData() {
         fun toListedDto(): QuestionDto.QuestionListedDto
-                = QuestionDto.QuestionListedDto(
-            number, question, subContents
-        )
+            = QuestionDto.QuestionListedDto(
+                number, question, subContents
+            )
     }
 
     data class QuestionIATData(
@@ -50,9 +50,9 @@ sealed class QuestionData {
         @SerializedName("sub_contents") val subContents: List<QuestionIATContent>
     ): QuestionData() {
         fun toIATDto(): QuestionDto.QuestionIATDto
-                = QuestionDto.QuestionIATDto(
-            number, question, subContents
-        )
+            = QuestionDto.QuestionIATDto(
+                number, question, subContents.map { it.toDto() }
+            )
     }
 
     data class QuestionAssayData(

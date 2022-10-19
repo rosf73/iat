@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:weightSum="6">
+
+    <TextView
+        android:id="@+id/tv_category"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#222"
+        android:textSize="20sp"
+        tools:text="하고 싶다"
+        android:textAlignment="center"
+        android:background="#CACACA"
+        android:layout_marginBottom="1dp"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/tv_words"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="#222"
+        android:textSize="18sp"
+        tools:text="하고 싶다, 해내고 싶다, 했으면 좋겠다 ,하길 바란다, 하길 원한다"
+        android:textAlignment="center"
+        android:background="#DDD"
+        android:layout_weight="5"/>
+
+</TableRow>

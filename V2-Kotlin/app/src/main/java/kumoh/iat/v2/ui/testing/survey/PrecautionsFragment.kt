@@ -1,4 +1,4 @@
-package kumoh.iat.v2.ui.testing.precautions
+package kumoh.iat.v2.ui.testing.survey
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

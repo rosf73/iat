@@ -36,11 +36,24 @@
     <string name="survey_question">문항</string>
     <string name="survey_prev">이전문항</string>
     <string name="survey_next">다음문항</string>
+    <string name="survey_sub_question">(%d)  %s</string>
 
+    <string name="iat">Implicit Association Test</string>
+    <string name="iat_precautions">지금부터 5분 동안, 보여드리는 단어들을 구분하는 일을 할 것입니다.\n\n\'왼쪽 버튼\'과 \'오른쪽 버튼\'을 사용하여 가급적 빠르고 정확하게 누르시면 됩니다.\n\n아래에 제시된 범주에 속한 단어들을 확인하시고, 각 범주에 속한 단어들이 무엇이 있는지 한 번 훑어보시기 바랍니다.</string>
+    <string name="iat_table_title_1">범주</string>
+    <string name="iat_table_title_2">단어</string>
     <string name="iat_start">시작하기</string>
+    <string name="iat_start_button">테스트 시작</string>
+    <string name="iat_info">%s 단어가 나오면 왼쪽 버튼을, %s 단어가 나오면 오른쪽 버튼을 눌러주세요.\n가급적 빠르고 정확하게 실시해 주시면 됩니다.\n\n틀리면 ×자가 화면에 뜰 것입니다.\n그럴 때는 다시 정답을 눌러주시면 됩니다.\n정답을 맞히시면 곧바로 다음 문제로 넘어가게 됩니다.\n\n시작할 준비가 되셨으면 테스트 시작 버튼을 눌러주세요</string>
+
+    <string name="iat_finish">테스트 완료!\n설문을 계속 진행해주세요</string>
+    <string name="iat_finish_button">설문 진행하기</string>
+    <string name="iat_left">왼쪽</string>
+    <string name="iat_right">오른쪽</string>
 
     <string name="desc_logo">로고</string>
     <string name="desc_checkbox">체크 박스</string>
+    <string name="desc_close">닫기</string>
 
     <string name="msg_server_error">서버의 일시적 장애로 이용이 불가합니다.</string>
     <string name="msg_network_error">네트워크 연결을 확인해주세요.</string>
@@ -49,5 +62,4 @@
     <string name="msg_info_notice">모든 항목을 입력해주세요</string>
     <string name="msg_major_notice">대학생은 전공을 입력해주세요</string>
 
-    <string name="survey_sub_question">(%d)  %s</string>
 </resources>

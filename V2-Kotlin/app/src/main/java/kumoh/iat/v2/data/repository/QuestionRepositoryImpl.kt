@@ -2,7 +2,6 @@ package kumoh.iat.v2.data.repository
 
 import kumoh.iat.v2.data.datasource.QuestionDataSource
 import kumoh.iat.v2.data.dto.QuestionDto
-import kumoh.iat.v2.data.response.question.*
 import kumoh.iat.v2.data.response.question.QuestionData.*
 import javax.inject.Inject
 

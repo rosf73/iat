@@ -65,6 +65,7 @@ class SurveyFragment : Fragment() {
                     }
 
                     binding.pbSurvey.visibility = state.isLoading.visibility
+                    binding.btnIat.isEnabled = !state.iatDone
                     if (!state.isLoading) {
                         setAllBlind()
                         setButtons()

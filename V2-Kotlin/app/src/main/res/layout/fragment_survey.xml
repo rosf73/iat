@@ -156,7 +156,6 @@
         android:id="@+id/btn_iat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/primary"
         android:textSize="20sp"
         android:textColor="#FFF"
         android:text="@string/iat_start"
@@ -207,6 +206,7 @@
             android:textSize="12sp"
             android:textColor="#FFF"
             android:text="@string/survey_prev"
+            android:enabled="false"
             android:layout_marginEnd="5dp"
             android:minHeight="0dp"
             android:minWidth="0dp"/>
@@ -218,6 +218,7 @@
             android:textSize="12sp"
             android:textColor="#FFF"
             android:text="@string/survey_next"
+            android:enabled="false"
             android:minHeight="0dp"
             android:minWidth="0dp"
             android:layout_marginEnd="10dp"/>
